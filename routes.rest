@@ -1,11 +1,11 @@
 # The following requests return the connection status to the database.
 GET http://localhost:8080
-GET
+GET https://cse341-project01-64kj.onrender.com/
 
 # The following requests return all the contacts in the database.
-GET http://localhost:8080/
-GET
+GET http://localhost:8080/contacts
+GET https://cse341-project01-64kj.onrender.com/contacts
 
 # The following requests return a single contact from the database.
-GET http://localhost:8080/:id
-GET
+GET http://localhost:8080/contacts/:id ( e.g = http://localhost:8080/contacts/6782828d94435c7eef65a3eb )
+GET https://cse341-project01-64kj.onrender.com/contacts/:id ( e.g = https://cse341-project01-64kj.onrender.com/contacts/6782828d94435c7eef65a3eb )

@@ -1,6 +1,7 @@
 // Default Model.
 
 // Dependencies:
+require("dotenv").config();
 const client = require("../database/");
 const database = process.env.DATABASE;
 
@@ -10,10 +11,7 @@ const database = process.env.DATABASE;
 async function connectionStatus() {
   try {
     await client.connect();
-    await client
-      .db(database)
-      .command({ ping: 1 })
-      .then(console.log("Handshake successful. connection to MongoDB stablished."));
+    await client.db(database).command({ ping: 1 }).then(console.log("connection to MongoDB stablished."));
     return "Bridge stablished.";
   } catch (error) {
     console.log(error);
