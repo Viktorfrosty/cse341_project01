@@ -2,7 +2,7 @@
 const express = require("express");
 require("dotenv").config();
 const bodyParser = require("body-parser");
-const defaultController = require("./controllers/");
+const defaultRouter = require("./routes/");
 const contactsRouter = require("./routes/contacts");
 const app = express();
 
@@ -13,8 +13,7 @@ app.use(bodyParser.json()).use((req, res, next) => {
 });
 
 // routes
-app.get("/", defaultController.status);
-
+app.use("/", defaultRouter);
 app.use("/contacts", contactsRouter);
 
 // Server host and port
