@@ -1,0 +1,11 @@
+# The following requests return the connection status to the database.
+GET http://localhost:8080
+GET
+
+# The following requests return all the contacts in the database.
+GET http://localhost:8080/
+GET
+
+# The following requests return a single contact from the database.
+GET http://localhost:8080/:id
+GET
