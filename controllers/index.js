@@ -7,6 +7,7 @@ const model = require("../models/");
 
 // check if server is running smoothly.
 async function status(req, res) {
+  //#swagger.tags = ["Status"]
   const message = await model.connectionStatus();
   res.send(message);
 }

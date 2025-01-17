@@ -24,7 +24,7 @@ content-type: application/json
 
 ### The following requests updates a single contact in the database.
 # Format: PUT http://localhost:8080/contacts/:id
-PUT http://localhost:8080/contacts/67899df84f431856da555902 HTTP/1.1
+PUT http://localhost:8080/contacts/6789b3f0b7a41ebacc69d4c8 HTTP/1.1
 content-type: application/json
 
 {
@@ -37,7 +37,7 @@ content-type: application/json
 
 ### The following requests deletes a single contact in the database.
 # Format: DELETE http://localhost:8080/contacts/:id
-DELETE http://localhost:8080/contacts/67899f414f431856da555903
+DELETE http://localhost:8080/contacts/6789b3feb7a41ebacc69d4c9
 
 
 # Render.com:
