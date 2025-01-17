@@ -7,6 +7,7 @@ GET http://localhost:8080
 GET http://localhost:8080/contacts
 
 ### The following requests return a single contact from the database.
+# Format: GET http://localhost:8080/contacts/:id
 GET http://localhost:8080/contacts/6782828d94435c7eef65a3f1
 
 ### The following requests creates a single contact in the database.
@@ -22,6 +23,7 @@ content-type: application/json
 }
 
 ### The following requests updates a single contact in the database.
+# Format: PUT http://localhost:8080/contacts/:id
 PUT http://localhost:8080/contacts/67899df84f431856da555902 HTTP/1.1
 content-type: application/json
 
@@ -34,7 +36,9 @@ content-type: application/json
 }
 
 ### The following requests deletes a single contact in the database.
+# Format: DELETE http://localhost:8080/contacts/:id
 DELETE http://localhost:8080/contacts/67899f414f431856da555903
+
 
 # Render.com:
 
@@ -45,6 +49,7 @@ GET https://cse341-project01-64kj.onrender.com/
 GET https://cse341-project01-64kj.onrender.com/contacts
 
 ### The following requests return a single contact from the database.
+# Format: GET https://cse341-project01-64kj.onrender.com/contacts/:id
 GET  https://cse341-project01-64kj.onrender.com/contacts/6782828d94435c7eef65a3f1
 
 ### The following requests creates a single contact in the database.
@@ -60,7 +65,8 @@ content-type: application/json
 }
 
 ### The following requests updates a single contact in the database.
-PUT https://cse341-project01-64kj.onrender.com/contacts/67899df84f431856da555902 HTTP/1.1
+# Format: PUT https://cse341-project01-64kj.onrender.com/contacts/:id
+PUT https://cse341-project01-64kj.onrender.com/contacts/6789b3f0b7a41ebacc69d4c8 HTTP/1.1
 content-type: application/json
 
 {
@@ -72,4 +78,5 @@ content-type: application/json
 }
 
 ### The following requests deletes a single contact in the database.
-DELETE http://localhost:8080/contacts/67899f414f431856da555903
+# Format: DELETE https://cse341-project01-64kj.onrender.com/contacts/:id
+DELETE https://cse341-project01-64kj.onrender.com/contacts/6789b3feb7a41ebacc69d4c9
