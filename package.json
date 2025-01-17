@@ -1,6 +1,6 @@
 {
   "name": "cse341_project01",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CSE 341 Project 01",
   "main": "server.js",
   "scripts": {

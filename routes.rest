@@ -1,11 +1,75 @@
-# The following requests return the connection status to the database.
+# localhost:
+
+### The following request return the connection status to the database.
 GET http://localhost:8080
+
+### The following request return all the contacts in the database.
+GET http://localhost:8080/contacts
+
+### The following requests return a single contact from the database.
+GET http://localhost:8080/contacts/6782828d94435c7eef65a3f1
+
+### The following requests creates a single contact in the database.
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mr",
+    "lastName": "Test",
+    "email": "mr.test@example.com",
+    "favoriteColor": "Test",
+    "birthday": "0000-00-00"
+}
+
+### The following requests updates a single contact in the database.
+PUT http://localhost:8080/contacts/67899df84f431856da555902 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Michael",
+    "lastName": "Test",
+    "email": "mike.test@example.com",
+    "favoriteColor": "Test",
+    "birthday": "0000-00-00"
+}
+
+### The following requests deletes a single contact in the database.
+DELETE http://localhost:8080/contacts/67899f414f431856da555903
+
+# Render.com:
+
+### The following request return the connection status to the database.
 GET https://cse341-project01-64kj.onrender.com/
 
-# The following requests return all the contacts in the database.
-GET http://localhost:8080/contacts
+### The following request return all the contacts in the database.
 GET https://cse341-project01-64kj.onrender.com/contacts
 
-# The following requests return a single contact from the database.
-GET http://localhost:8080/contacts/:id ( e.g = http://localhost:8080/contacts/6782828d94435c7eef65a3eb )
-GET https://cse341-project01-64kj.onrender.com/contacts/:id ( e.g = https://cse341-project01-64kj.onrender.com/contacts/6782828d94435c7eef65a3eb )
+### The following requests return a single contact from the database.
+GET  https://cse341-project01-64kj.onrender.com/contacts/6782828d94435c7eef65a3f1
+
+### The following requests creates a single contact in the database.
+POST https://cse341-project01-64kj.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mr",
+    "lastName": "Test",
+    "email": "mr.test@example.com",
+    "favoriteColor": "Test",
+    "birthday": "0000-00-00"
+}
+
+### The following requests updates a single contact in the database.
+PUT https://cse341-project01-64kj.onrender.com/contacts/67899df84f431856da555902 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Michael",
+    "lastName": "Test",
+    "email": "mike.test@example.com",
+    "favoriteColor": "Test",
+    "birthday": "0000-00-00"
+}
+
+### The following requests deletes a single contact in the database.
+DELETE http://localhost:8080/contacts/67899f414f431856da555903

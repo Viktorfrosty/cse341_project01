@@ -12,10 +12,10 @@ async function connectionStatus() {
   try {
     await client.connect();
     await client.db(database).command({ ping: 1 }).then(console.log("connection to MongoDB stablished."));
-    return "Bridge stablished.";
+    return { message: "Connection stablished." };
   } catch (error) {
     console.log(error);
-    return "Bridge could not be stablished.";
+    return { message: error.errmsg };
   } finally {
     await client.close();
   }
